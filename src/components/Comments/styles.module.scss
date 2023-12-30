@@ -1,0 +1,45 @@
+.comment {
+    width: 25rem;
+    height: 10rem;
+    background-color: #00000034;
+    color: #fff;
+    border-radius: 1rem;
+    border: 2px solid #000;
+
+    .userInfo {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .2rem .5rem;
+        background-color: #000000;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: .7rem;
+        }
+
+        img {
+            width: 2rem;
+        }
+    }
+
+    .content {
+        height: 70%;
+        overflow: auto;
+        padding: .5rem .8rem;
+
+        &::-webkit-scrollbar {
+          background-color: #ffffff27;
+          width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #27ae60;
+        }
+    }
+}

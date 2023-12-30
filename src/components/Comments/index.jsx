@@ -15,9 +15,8 @@ function Comments({ email, content, id }) {
                     <p>{dateAndHours}</p>
                 </div>
             </div>
-            <div className={styles.content}>
-                <p>{content}</p>
-            </div>
+            <p className={styles.content}>{content}</p>
+            
         </div>
     )
 }

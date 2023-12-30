@@ -1,8 +1,11 @@
+import styles from "./styles.module.scss";
+
 function EmailInput({ email, setEmail }) {
     return (
         <div>
-            <label htmlFor="email">Email</label>
+            <label className={styles.label} htmlFor="email">Email</label>
             <input
+                className={styles.input}
                 type="email"
                 name="email"
                 id="email"

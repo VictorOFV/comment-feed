@@ -10,14 +10,18 @@ function App() {
     <div className={styles.app}>
       <FormComment addComment={addComment} />
       <div className={styles.commentsContainer}>
-        {comments.map(({ email, content, id }) => (
-          <Comments
-            key={id}
-            content={content}
-            email={email}
-            id={id}
-          />
-        ))}
+        <h2>Comentários</h2>
+        <hr />
+        {comments.length > 0 ?
+          (comments.map(({ email, content, id }) => (
+            <Comments
+              key={id}
+              content={content}
+              email={email}
+              id={id}
+            />
+          )))
+          : (<h2>Seja o primeiro a comentar!!</h2>)}
       </div>
     </div>
   )

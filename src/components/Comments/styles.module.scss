@@ -10,6 +10,7 @@
         display: flex;
         align-items: center;
         gap: .5rem;
+        word-break: break-all;
         padding: .2rem .5rem;
         background-color: #000000;
         border-top-left-radius: 10px;
@@ -17,6 +18,7 @@
 
         h3 {
             font-size: 1rem;
+            text-wrap: wrap;
         }
 
         p {
@@ -34,12 +36,36 @@
         padding: .5rem .8rem;
 
         &::-webkit-scrollbar {
-          background-color: #ffffff27;
-          width: 5px;
+            background-color: #ffffff27;
+            width: 5px;
         }
 
         &::-webkit-scrollbar-thumb {
             background-color: #27ae60;
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .comment {
+        width: 20rem;
+
+        .userInfo {
+           h3 {
+            font-size: .8rem;
+           }
+        }
+    }
+}
+
+@media (max-width: 326px) {
+    .comment {
+        width: auto;
+
+        .userInfo {
+           h3 {
+            font-size: .8rem;
+           }
         }
     }
 }
